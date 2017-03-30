@@ -1,0 +1,348 @@
+/*
+ * Globals
+ */
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: 'Droid Serif', serif;
+  color: #555;
+  background-color: #e5e5e5;
+  word-break: break-all;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container {
+  max-width: 60rem;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  margin-bottom: 3rem;
+  /*background-color: #428bca;*/
+  background: hsla(0,0%,100%,.97);
+  -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+          box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+  height: 39px;
+}
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  padding: .3rem .5rem 1rem 0;
+  font-weight: 500;
+  /*color: #cdddeb;*/
+  color: #738a94;
+
+}
+.nav-link:hover,
+.nav-link:focus {
+  /*color: #fff;*/
+  color:#52636b;
+  background-color: transparent;
+}
+.green {
+  color: #98c22e;  
+}
+  .green:hover {
+    color: #98c22e;
+  }
+
+/* Active state gets a caret at the bottom */
+/*.nav-link.active {*/
+  /*color: #fff;*/
+/*  color:#52636b;
+
+}*/
+/*.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
+}*/
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+  margin: 0 -4rem 1rem;
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 4rem;
+  background: hsla(0,0%,100%,.97);
+  padding: 1.5em 2em 0 1.5em;
+  border-radius: 10px;
+  font-size:  .9rem;
+  width: 92%;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+p {
+  line-height: 1.8em;
+  letter-spacing: 0.05rem;
+}
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------*/
+
+.prof_pic {
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 2.5rem;
+}
+
+.label {
+  background-color: #999999;
+  color: hsla(0,0%,100%,.97);
+  border-radius: 5px;
+  padding: 4px;
+  font-size: .55rem;
+}
+  .label:hover {
+    background-color: lightblue;
+    font-size: .9rem;
+    background-repeat: no-repeat;
+    /*content: 100px url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5144/ios7-close-empty.svg');*/
+  }
+
+.prof_name {
+  color: inherit;
+}
+  .prof_name:hover {
+    color: inherit;
+  }
+
+.float_right {
+  position: absolute;
+  right: 0;
+}
+
+.inline {
+  display: inline-block;
+}
+#flip {
+  margin-top: 2px;
+  color: #999;
+  background-color: inherit; 
+  font-size: .9rem;
+  border: 1px solid #999;
+  padding: 5px;
+}
+  #flip:hover {
+    color: #26A8EA;
+    border: 1px solid #26a8ed;
+  }
+
+#panel {
+  position: absolute;
+  background-color: #fff;
+  top: 50px;
+  right: 0;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 15px;
+  z-index: 5;
+  font-size: .7rem;
+  width: 150px;
+  border: 3px solid #FAFAD2;
+}
+
+  #panel:after {
+    position: absolute;
+    top: -10px;
+    left: 80%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .6rem solid #FAFAD2;
+    border-bottom: .6rem solid #fff;
+    border-left: .6rem solid #FAFAD2;
+  }
+
+.left_nav {
+  color: inherit;
+}
+  .left_nav:hover {
+    color: #26a8ed;
+    text-decoration: none;
+  }
+
+.search {
+  position: absolute;
+  right: 45%;
+  top: 5px;
+
+}
+
+.in_search, .btn_search {
+  height: 25px;
+  font-size: .7rem;
+} 
+
+.btn_search {
+  padding-top: 5px;
+}
+
+.title {
+  color: inherit;
+}
+    .title:hover {
+      text-decoration: none;
+      color: #26a8ed;
+    }
+
+.right_pad {
+  margin-right: 1rem;
+}
+
+.red {
+  height: .8rem;
+  width: .9rem;
+  left: .5rem ;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; 
+  text-align: center;
+  padding: .1rem 0 0 0;
+  font-size: .7rem;
+}
+
+.relative {
+  position: relative;
+  display: inline-block;
+}
+
+.dd {
+  position: absolute;
+  top: -4.5rem;
+  right: -33.5rem;
+}
+  .dd_1 {
+    border-color: transparent;
+    height: .1rem;
+    width: .1rem;
+    position: absolute;
+    right: 3rem;
+  }
+
+  .dd_2 {
+    position: absolute;
+    top: 1.5rem;
+  }
+
+.resize {
+  min-width: 1rem;
+ position: absolute;
+ left: -3rem;
+
+}
+
